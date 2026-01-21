@@ -1,0 +1,99 @@
+.App {
+  text-align: center;
+}
+
+.App-main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px;
+  color: #0b1220;
+  background: radial-gradient(1200px 500px at 50% -10%, #dbeafe 0%, rgba(219, 234, 254, 0) 60%),
+    linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.App-title {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: -0.02em;
+}
+
+.App-subtitle {
+  margin: 10px 0 28px;
+  color: #475569;
+}
+
+.VideoDropzone {
+  width: min(720px, 100%);
+}
+
+.VideoDropzone__surface {
+  position: relative;
+  border: 2px dashed #94a3b8;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 28px 22px;
+  cursor: pointer;
+  transition: border-color 120ms ease, background 120ms ease, transform 120ms ease;
+  box-shadow: 0 6px 30px rgba(2, 6, 23, 0.06);
+  outline: none;
+}
+
+.VideoDropzone__surface:hover {
+  border-color: #64748b;
+  transform: translateY(-1px);
+}
+
+.VideoDropzone__surface.is-dragging {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.VideoDropzone__surface:focus-visible {
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.25), 0 6px 30px rgba(2, 6, 23, 0.06);
+}
+
+.VideoDropzone__input {
+  display: none;
+}
+
+.VideoDropzone__content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+
+.VideoDropzone__label {
+  font-weight: 650;
+  font-size: 18px;
+}
+
+.VideoDropzone__hint {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.VideoDropzone__selected {
+  margin-top: 16px;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 14px;
+  box-shadow: 0 6px 30px rgba(2, 6, 23, 0.06);
+}
+
+.VideoDropzone__filename {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.VideoDropzone__preview {
+  width: 100%;
+  max-height: 360px;
+  border-radius: 10px;
+  background: #0b1220;
+}
